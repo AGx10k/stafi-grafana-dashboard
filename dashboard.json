@@ -18,7 +18,16 @@
   "graphTooltip": 0,
   "id": 14,
   "iteration": 1592899999758,
-  "links": [],
+  "links": [
+    {
+      "icon": "external link",
+      "tags": [],
+      "targetBlank": true,
+      "title": "github source",
+      "type": "link",
+      "url": "https://github.com/AGx10k/stafi-grafana-dashboard"
+    }
+  ],
   "panels": [
     {
       "alert": {
@@ -832,5 +841,5 @@
   "variables": {
     "list": []
   },
-  "version": 8
+  "version": 9
 }
