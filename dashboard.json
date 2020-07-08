@@ -135,19 +135,19 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "rate(substrate_block_height{job=\"stafi\",status=\"best\"}[5m])",
+          "expr": "rate(substrate_block_height{job=\"$job\",status=\"best\"}[5m])",
           "interval": "",
           "legendFormat": "best-{{instance}}",
           "refId": "A"
         },
         {
-          "expr": "rate(substrate_block_height{job=\"stafi\",status=\"sync_target\"}[5m])",
+          "expr": "rate(substrate_block_height{job=\"$job\",status=\"sync_target\"}[5m])",
           "interval": "",
           "legendFormat": "finalized-{{instance}}",
           "refId": "B"
         },
         {
-          "expr": "rate(substrate_block_height{job=\"stafi\",status=\"finalized\"}[5m])",
+          "expr": "rate(substrate_block_height{job=\"$job\",status=\"finalized\"}[5m])",
           "interval": "",
           "legendFormat": "sync_target-{{instance}}",
           "refId": "C"
@@ -288,7 +288,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "substrate_sub_libp2p_peers_count{job=\"stafi\"}",
+          "expr": "substrate_sub_libp2p_peers_count{job=\"$job\"}",
           "instant": false,
           "interval": "",
           "legendFormat": "{{instance}}",
