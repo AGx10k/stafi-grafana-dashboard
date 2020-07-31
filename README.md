@@ -24,4 +24,4 @@ You will need [Prometheus](https://github.com/prometheus/prometheus#install) and
 7. for monitoring and alerting system overall parameters i recomment using [Prometheus Node Exporter](https://github.com/prometheus/node_exporter) and just creating alerts for mem <20%, disk < 20%, cpu > 80%
 8. for monitoring new version i recommend subscribing to [stafi-node](https://github.com/stafiprotocol/stafi-node) github notifications:
 ![subscribe stafi](https://github.com/AGx10k/stafi-grafana-dashboard/blob/master/stafi-subscribe-notifications.png?raw=true)
-9. also i recommend to try my script to monitor and restart stalled blocks: https://github.com/AGx10k/substrate-restart-stalled-blocks
+9. also i recommend to try my script to monitor and restart when sync is stalled: https://github.com/AGx10k/substrate-restart-stalled-blocks
